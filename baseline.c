@@ -12,5 +12,5 @@ double compute_pi(size_t dt){
 }
 
 int main(){
-	printf("%f\n",compute_pi(128*1000000));
+	printf("%.10lf\n",compute_pi(128*1000000));
 }
