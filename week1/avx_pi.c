@@ -41,6 +41,6 @@ int main(int argc, char* argv[]){
 	clock_gettime(CLOCK_MONOTONIC_RAW,&end);	//end time
 	//printf("pi:%.10lf\nerror: %.10lf\n",my_pi,pi-my_pi);
 	//printf("time: %lf second\n\n",(double)((end.tv_sec - start.tv_sec)+(end.tv_nsec - start.tv_nsec)/SEC));
-	printf("%lf %.10lf\n\n",(double)((end.tv_sec - start.tv_sec)+(end.tv_nsec - start.tv_nsec)/SEC),pi-my_pi);
+	printf("%lf %.10lf\n",(double)((end.tv_sec - start.tv_sec)+(end.tv_nsec - start.tv_nsec)/SEC),pi-my_pi);
 	return 0;
 }
